@@ -1,20 +1,23 @@
 @import "variables";
 @import "reset";
 @import "responsive";
+@import "../ui/NavBar/NavBar";
+@import "home";
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+#nprogress {
+  position: relative;
+  z-index: 100;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  .bar {
+      background: $active !important;
+  }
 
-* {
-  box-sizing: border-box;
+  .peg {
+      box-shadow: 0 0 10px $active, 0 0 5px $active !important;
+  }
+
+  .spinner-icon {
+      border-top-color: $active !important;
+      border-left-color: $active !important;
+  }
 }

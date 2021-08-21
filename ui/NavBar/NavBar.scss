@@ -1,0 +1,15 @@
+.nav-bar-ui-component {
+    background: $bg-alt;
+  
+    a {
+        margin: 1rem .5rem;
+        height: 3rem;
+        font-size: 2.5rem;
+        font-weight: $extra-bold;
+        text-transform: none;
+
+        @include tablet {
+            margin-left: 1.5rem; 
+        }
+    }
+}
